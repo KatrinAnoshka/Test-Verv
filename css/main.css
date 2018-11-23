@@ -81,7 +81,7 @@ a.button {
     padding: 30px 130px 165px;
 }
 .header__logo {
-    background: url(../img/logo.png);
+    background: url(../img/logo.png) ;
     width: 170px;
     height: 170px;
     display: block;
@@ -289,7 +289,7 @@ input:-webkit-autofill:active {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 55px;
+    padding-bottom: 52px;
     margin: 0 auto;
 }
 .practice__item {
@@ -310,7 +310,16 @@ input:-webkit-autofill:active {
 }
 .practice__img {
     width: 106px;
-    height: auto;
+    height: 106px;
+}
+.practice__disc {
+    background: url('../img/css_sprites-practice.png') -242px -242px;
+}
+.practice__pillow {
+    background: url('../img/css_sprites-practice.png') -474px -136px;
+}
+.practice__hands {
+    background: url('../img/css_sprites-practice.png') -474px -10px;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -320,6 +329,16 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 1.5dppx){
     .practice__img {
         width: 212px;
+        height: 212px;
+    }
+    .practice__disc {
+        background: url('../img/css_sprites-practice.png') -10px -10px;
+    }
+    .practice__pillow {
+        background: url('../img/css_sprites-practice.png') -10px -242px;
+    }
+    .practice__hands {
+        background: url('../img/css_sprites-practice.png') -242px -10px;
     }
 }
 .practice__subtitle {
@@ -350,11 +369,11 @@ only screen and (min-resolution: 1.5dppx){
 }
 .footer__nav {
     background-color: #fff;
-    padding: 55px 20px;
+    padding: 54px 20px;
     text-align: center;
 }
 .footer__nav a {
-    font-size: 1.2em;
+    font-size: 0.92em;
     color: rgb(93, 186, 205);
     font-weight: bold;
     line-height: 1.2;
@@ -365,73 +384,29 @@ only screen and (min-resolution: 1.5dppx){
 }
 .footer__arrow {
     background-color: #5dbacd;
-    padding: 30px 20px;
+    padding: 22px 20px;
     text-align: center;
 }
 .footer__img {
-    width: 22.5px;
+    width: 20px;
     cursor: pointer;
 }
 
-/* Pop-up-form */
+/***************--------- Pop-up-form ---------***************/
 
 .hidden {
     display: none;
 }
-
-/*form {
+#form_back,
+#form_back-log-in {
     background-color: #F7F7F7;
     padding: 25px 30px;
-    border: #79b433 5px solid;
+    border: #b9e3ed 5px solid;
     border-radius: 5px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 15px;
-    color: #666;
-    font-size: 14px;
-}
-
-form input {
-    display: block;
-    line-height: 40px;
-    height: 40px;
-    border: #D9D9D9 1px solid;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
-    width: 100%;
-    text-indent: 10px;
-    font-size: 20px;
-    margin-top: 3px;
-}
-
-form .button_wrap {
-    text-align: center;
-    margin: 30px 0 10px;
-}
-
-.button.btn-green {
-    background-color: #79b433;
-    color: #fff;
-    outline: none;
-    font-size: 15px;
-    padding: 8px 10px;
-}
-
-#form_back {
     max-width: 420px;
     margin: auto;
     position: relative;
 }
 
-#form_back h2 {
-    text-align: center;
-    font-weight: normal;
-}
 
-#form_back p {
-    text-align: center;
-}
 
-*/
