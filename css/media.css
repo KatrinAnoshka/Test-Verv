@@ -1,7 +1,13 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1205px) {	
+@media only screen and (max-width : 1200px) {	
+	.header__container {
+		/*-webkit-backgrounds-size: cover;*/
+		background-size: cover;
+		background-position: 40% 100%;
+		position: relative;
+	}
 	
 }
 @media only screen and (max-width : 1170px) {
@@ -16,6 +22,17 @@
 @media only screen and (max-width : 768px) {	
 	.header {
 		height: 570px;
+	}
+	.header__container:after {
+		position: absolute;
+    bottom: -54px;
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 130px;
+    z-index: 100;
+    background: url(../img/gradient.png) 50% 0;
+    background-size: 100% 100%;
 	}
 	.header__logo {
 	    width: 100px;
@@ -37,30 +54,62 @@
 		font-size: 1.43em;
 	}
 	.header__button {
-	    width: 100%;
+	    width: 325px;
 	   
 	    margin-top: 135px;
 	}
 
 	.registration__wrapper {
-	     width: 100%; 
-	    max-width: 325px;
+	     width: 325px; 
+	    /*max-width: 325px;*/
 	    padding: 50px 25px 40px;
 	}
+	.registration__terms,
+	.registration__log {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.registration__log {
+		padding-top: 35px;
+	}
+	.registration__button {
+		margin-top: 35px;
+	}
+	.registration__input {
+		height: 20px;
+	}
 	a.button {
-		width: 100% !important;
+		width: auto;
+	}
+
+	/*Practice*/
+	.practice {
+		padding-top: 65px;
+	}
+	.practice__wrap {
+		padding-bottom: 60px;
+	}
+	.practice__title {
+	    font-size: 1.79em;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 600px) {
 	
-	.header {
+	.header__container {
 	    background-position: 70% 50%;
 	}
 }
-@media only screen and (max-width : 728px) {
-	
+@media only screen and (max-width : 375px) {
+	a.button {
+	    font-size: 1.2em;
+	    line-height: 3.3;
+	}
+	.registration__wrapper {
+	     width: auto; 
+	  
+	} 
 }
 @media only screen and (max-width : 640px) {
 	
